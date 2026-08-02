@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <title>🌎 Americas Travel Weekly — Jul 27–Aug 2, 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 52px; }
+    body { font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.5; background: #fafbfc; color: #1a1a2e; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px 20px 20px; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); color: #fff; padding: 28px 20px; margin: 0 -20px 24px -20px; box-shadow: 0 4px 12px rgba(26,26,46,0.15); position: relative; overflow: hidden; }
+    header h1 { font-family: 'DM Sans', sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    header .dates { font-size: 14px; opacity: 0.85; }
+    header .back-link { position: absolute; top: 12px; right: 20px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; }
+    header .back-link:hover { color: #fff; }
+    .page-nav { position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 8px 0; margin-bottom: 14px; border-bottom: 1px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.04); overflow-x: auto; white-space: nowrap; z-index: 100; }
+    .page-nav a { display: inline-block; padding: 6px 14px; margin: 0 3px; font-size: 13px; font-weight: 500; color: #6c757d; text-decoration: none; border-radius: 20px; transition: all 0.2s ease; }
+    .page-nav a:hover { background: #f1f3f5; color: #1a1a2e; }
+    .page-nav a.active { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%); color: #fff; }
+    .section { margin-bottom: 16px; background: #fff; border-radius: 12px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.04); opacity: 0; transform: translateY(12px); animation: fadeUp 0.4s ease forwards; }
+    .section:nth-child(1){animation-delay:0.05s} .section:nth-child(2){animation-delay:0.1s} .section:nth-child(3){animation-delay:0.15s} .section:nth-child(4){animation-delay:0.2s} .section:nth-child(5){animation-delay:0.25s} .section:nth-child(6){animation-delay:0.3s} .section:nth-child(7){animation-delay:0.35s} .section:nth-child(8){animation-delay:0.4s} .section:nth-child(9){animation-delay:0.45s} .section:nth-child(10){animation-delay:0.5s}
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    .section-header { font-family: 'DM Sans', sans-serif; font-size: 20px; font-weight: 700; padding: 6px 0 6px 14px; margin-bottom: 10px; border-left: 4px solid; }
+    .section-header.us { border-color: #3b5998; background: linear-gradient(90deg,rgba(59,89,152,0.04) 0%,transparent 100%); }
+    .section-header.canada { border-color: #dc3545; background: linear-gradient(90deg,rgba(220,53,69,0.04) 0%,transparent 100%); }
+    .section-header.brazil { border-color: #2d936c; background: linear-gradient(90deg,rgba(45,147,108,0.04) 0%,transparent 100%); }
+    .section-header.mexico { border-color: #e07a5f; background: linear-gradient(90deg,rgba(224,122,95,0.04) 0%,transparent 100%); }
+    .section-header.competitor { border-color: #9b59b6; background: linear-gradient(90deg,rgba(155,89,182,0.04) 0%,transparent 100%); }
+    .section-header.implications { border-color: #27ae60; background: linear-gradient(90deg,rgba(39,174,96,0.04) 0%,transparent 100%); }
+    .section-header.sources { border-color: #6c757d; background: linear-gradient(90deg,rgba(108,117,125,0.04) 0%,transparent 100%); }
+    .section-header.holidays { border-color: #f39c12; background: linear-gradient(90deg,rgba(243,156,18,0.04) 0%,transparent 100%); }
+    .key-numbers { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 20px; }
+    .kpi-tile { background: linear-gradient(135deg,#f8f9fa 0%,#fff 100%); border-radius: 10px; padding: 16px 12px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.04); }
+    .kpi-tile .big-number { font-family: 'DM Sans',sans-serif; font-size: 36px; font-weight: 700; line-height: 1.1; margin-bottom: 4px; }
+    .kpi-tile .big-number.red { color: #e63946; }
+    .kpi-tile .big-number.green { color: #2d936c; }
+    .kpi-tile .big-number.warm { color: #e07a5f; }
+    .kpi-tile .big-number.blue { color: #3b5998; }
+    .kpi-tile .label { font-size: 12px; color: #6c757d; font-weight: 500; }
+    .market-summary { font-size: 14px; font-weight: 500; padding: 14px; margin-bottom: 12px; background: #f0f2f5; color: #1a1a2e; border-radius: 10px; border-left: 4px solid; }
+    .market-summary p { margin: 5px 0; line-height: 1.55; }
+    .market-summary.us { border-color: #3b5998; }
+    .market-summary.canada { border-color: #dc3545; }
+    .market-summary.brazil { border-color: #2d936c; }
+    .market-summary.mexico { border-color: #e07a5f; }
+    .news-item { padding: 8px 0; border-bottom: 1px solid #f1f3f5; font-size: 14px; color: #2d3436; line-height: 1.55; }
+    .news-item:last-child { border-bottom: none; }
+    .news-item strong { font-weight: 600; color: #1a1a2e; font-size: 14.5px; }
+    .stat { font-weight: 600; font-size: 14px; }
+    .stat.up { color: #2d936c; }
+    .stat.up-strong { color: #1a7a52; }
+    .stat.down { color: #dc3545; }
+    .stat.neutral { color: #e07a5f; }
+    .news-item a { color: #6c757d; text-decoration: none; font-size: 12px; margin-left: 4px; }
+    .news-item a:hover { color: #1a1a2e; text-decoration: underline; }
+    .key-signals .news-item { padding: 12px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #f1f3f5; }
+    th { background: linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%); font-weight: 600; color: #495057; font-size: 12px; }
+    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e9ecef; font-size: 12px; color: #adb5bd; text-align: center; }
+    @media (max-width: 600px) { .key-numbers { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="../americas-weekly/" class="back-link">← All Issues</a>
+    <h1>🌎 Americas Travel Weekly</h1>
+    <div class="dates">Jul 27 – Aug 2, 2026</div>
+  </header>
+
+  <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%); border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.06);">
+    <span style="font-size: 22px;">🎙️</span>
+    <div style="flex: 1;">
+      <div style="font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; color: #1a1a2e; margin-bottom: 6px;">Listen to this issue</div>
+      <audio controls preload="none" style="width: 100%; height: 36px;">
+        <source src="https://github.com/ibread/sites/releases/download/audio-assets/americas-weekly-2026-08-02.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <nav class="page-nav" id="page-nav">
+    <a href="#overview" class="active">Overview</a>
+    <a href="#us">🇺🇸 US</a>
+    <a href="#canada">🇨🇦 Canada</a>
+    <a href="#brazil">🇧🇷 Brazil</a>
+    <a href="#mexico">🇲🇽 Mexico</a>
+    <a href="#implications">💡 Implications</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="section-header us">📊 Week at a Glance</div>
+
+    <div class="key-numbers">
+      <div class="kpi-tile">
+        <div class="big-number red">−1M</div>
+        <div class="label">US seats cut to Mexico this summer</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="big-number green">+22.5%</div>
+        <div class="label">Brazil outbound spend YoY, H1 2026</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="big-number blue">97%</div>
+        <div class="label">CDMX Airbnb hosts outside mandatory registry</div>
+      </div>
+      <div class="kpi-tile">
+        <div class="big-number warm">+13%</div>
+        <div class="label">Brazil inbound foreign spend YoY, H1 2026</div>
+      </div>
+    </div>
+
+    <p style="font-size:14px; color:#495057; line-height:1.65; margin-bottom:10px;">
+      The week's dominant story is <strong>divergence</strong>. Brazil posted triple travel records — inbound spend at US$5.6B (+13%), outbound spend at US$12.6B (+22.5%), and domestic air at 50.1M passengers, all first-half highs — driven by a stronger real making foreign travel cheap. Mexico's Caribbean coast took hits from three directions simultaneously: ~1 million fewer US seats, record sargassum, and a Cofepris health inspection outbreak. Cancun lost share to the Dominican Republic while inland Mexico (Morelia, Mérida, Acapulco) outperformed. Canada's travel balance remained under pressure from US-Canada political friction, with departures to the US down sharply. The US domestic travel market showed resilience at the volume level but continued to show price sensitivity, with summer leisure demand holding and budget carriers gaining share.
+    </p>
+    <p style="font-size:14px; color:#495057; line-height:1.65;">
+      For Airbnb, the critical read-throughs are: CDMX's 97% host non-registration rate is a platform-liability moment requiring urgent action; Brazil's strong outbound wave creates cross-border demand that favours whole-home listings globally; Mexico's inland growth cities (Mérida, Morelia, Acapulco) are under-supplied Airbnb markets ripe for host acquisition; and the World Cup proved STR dynamic pricing captured mega-event premiums far more effectively than hotels.
+    </p>
+  </section>
+
+  <!-- US -->
+  <section class="section" id="us">
+    <div class="section-header us">🇺🇸 United States</div>
+    <div class="market-summary us">
+      <p>US summer travel held firm in volume with visible price sensitivity. Domestic leisure demand benefited from lower airfares — average domestic fares down ~7% YoY — while international inbound remained resilient despite lingering trade-war anxiety. Budget carriers and home-sharing continued to capture share from premium hotel segments.</p>
+    </div>
+
+    <div class="news-item">
+      <strong>Southwest Airlines exits open-seating model, completes transformation to assigned seats</strong><br>
+      Southwest completed its historic pivot to assigned seating this week, marking the end of a 50-year differentiation strategy. Early data shows average fares rising 3–5% on newly assigned routes as the airline targets higher-yield business travelers. The shift narrows the product gap between Southwest and legacy carriers, reducing the price-vs-comfort trade-off that historically pushed leisure travelers toward STRs for longer stays.
+      <a href="https://www.southwest.com" target="_blank">[Southwest]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>TSA screens record 2.9M passengers in single July day as summer peak holds</strong><br>
+      The Transportation Security Administration recorded its highest single-day screening count of 2026 in late July, confirming the summer leisure travel wave remained intact through the end of the month. The volume milestone came despite a <span class="stat down">~7% YoY decline</span> in average domestic airfares, suggesting travelers responded to lower prices with increased trip frequency rather than trading up on accommodation.
+      <a href="https://www.tsa.gov" target="_blank">[TSA]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>US outbound travel to Canada recovers as political tensions ease; Europe bookings surge</strong><br>
+      Travel data from the US Travel Association showed outbound bookings to Canada recovering modestly after a sharp Q1 dip tied to tariff rhetoric. European summer bookings from US origin continued to surge, up an estimated <span class="stat up">+18% YoY</span> in arrivals, helped by a relatively strong dollar against the euro. The trend confirms US consumers are broadening their international travel portfolio beyond traditional short-haul North American routes.
+      <a href="https://www.ustravel.org" target="_blank">[US Travel Assoc.]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Short-term rental supply growth slows in top-10 US metros; occupancy and RevPAR recover</strong><br>
+      AirDNA data for July 2026 showed the annual growth rate of active STR listings in the top-10 US metros slowed to <span class="stat neutral">+2.1% YoY</span>, the lowest since 2019, as tighter municipal regulations and softer host economics pruned marginal supply. Occupancy rates in the same markets recovered to <span class="stat up">68.4%</span> on average (up 1.8pp YoY) and RevPAR grew approximately <span class="stat up">+5% YoY</span>, the strongest quarterly comparison since Q3 2023.
+      <a href="https://www.airdna.co" target="_blank">[AirDNA]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>NYC Local Law 18 enforcement continues; registration count reaches 13,400 active STR hosts</strong><br>
+      New York City's Office of Special Enforcement confirmed approximately 13,400 registered short-term rental hosts are now active under Local Law 18, up from ~11,200 in April. The compliance number remains a fraction of estimated pre-regulation supply (~22,000 active listings), but the trajectory suggests the regulated market is stabilizing rather than collapsing. Illegal listing activity has migrated to VRBO-style platforms with whole-home exemptions and gray-zone "30-day minimum" listings.
+      <a href="https://www.nyc.gov" target="_blank">[NYC OSE]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Airbnb US host earnings rise 6% YoY in Q2; long-stay (28+ nights) bookings up 12%</strong><br>
+      Internal data cited in a host-facing Airbnb communication showed US host earnings grew approximately <span class="stat up">+6% YoY</span> in Q2 2026, with long-stay bookings (28+ nights) outpacing the overall portfolio at <span class="stat up">+12% YoY</span>. The long-stay acceleration is attributed to continued remote-work flexibility among high-income earners and a growing segment of retired "slow travelers." Markets gaining most: Scottsdale, Asheville, Palm Springs, and the Florida Gulf Coast.
+      <a href="https://www.airbnb.com" target="_blank">[Airbnb]</a>
+    </div>
+  </section>
+
+  <!-- CANADA -->
+  <section class="section" id="canada">
+    <div class="section-header canada">🇨🇦 Canada</div>
+    <div class="market-summary canada">
+      <p>Canada's summer travel picture split along political lines. Cross-border US travel remained subdued as trade-war anxiety kept some Canadian travelers home or redirected them to Europe and Mexico. Domestic leisure demand filled part of the gap, with national parks and coastal destinations logging strong July numbers. STR regulatory patchwork continued to tighten, with new municipal rules in Victoria and Halifax following Vancouver's 2025 playbook.</p>
+    </div>
+
+    <div class="news-item">
+      <strong>Canadian departures to the US down ~22% YoY in June; domestic travel rises 8%</strong><br>
+      Statistics Canada data showed Canadian resident departures to the United States fell approximately <span class="stat down">22% YoY</span> in June 2026, the sixth consecutive monthly decline as trade-war anxiety and a weaker CAD damped cross-border leisure travel. In parallel, Statistics Canada's domestic travel survey showed Canadians took <span class="stat up">8% more domestic overnight trips</span> in June versus June 2025, with British Columbia, PEI, and the Maritimes as the primary beneficiaries.
+      <a href="https://www.statcan.gc.ca" target="_blank">[Statistics Canada]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Tourism Toronto projects record 28M visitors in 2026 on strong US inbound and conference recovery</strong><br>
+      Tourism Toronto revised its 2026 annual visitor forecast upward to 28 million, citing stronger-than-expected US inbound (up approximately <span class="stat up">+9% YoY</span> in H1 despite broader bilateral friction), a rebound in international conference and convention business, and record-breaking summer leisure numbers. Toronto's STR market benefited from the conference surge, with July occupancy reaching <span class="stat up">76%</span> and ADR up <span class="stat up">+11% YoY</span>.
+      <a href="https://www.destinationtoronto.com" target="_blank">[Destination Toronto]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Victoria, BC passes short-term rental ordinance limiting STRs to principal residences</strong><br>
+      Victoria City Council voted to restrict short-term rentals to principal residences only, mirroring Vancouver's 2023 ordinance and taking effect October 1, 2026. An estimated 1,200–1,600 non-principal-residence listings face removal from platforms. Victoria's STR market is disproportionately tourist-facing due to its positioning as a summer leisure destination; the rule is expected to tighten supply by <span class="stat down">~30–40%</span> and push occupancy rates and ADR higher for compliant hosts.
+      <a href="https://www.victoria.ca" target="_blank">[City of Victoria]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Air Canada reports record July transpacific capacity; Asia-originating inbound to Canada +19%</strong><br>
+      Air Canada reported its highest-ever July seat deployment on transpacific routes, with Asia–Canada capacity up approximately <span class="stat up">+14% YoY</span>. Inbound arrivals from Asia-Pacific to Canada grew an estimated <span class="stat up">+19% YoY</span> in June, led by South Korean, Japanese, and Indian source markets. The trend creates host-acquisition opportunity in Vancouver and Toronto for listings optimised for Asian long-haul travelers: language support, longer-stay pricing, and airport-proximate supply.
+      <a href="https://www.aircanada.com" target="_blank">[Air Canada]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Halifax introduces STR registry with $250 annual fee; Airbnb compliance window opens</strong><br>
+      Halifax Regional Municipality launched its short-term rental registry effective July 28, requiring all hosts to register and pay a $250/year fee regardless of listing frequency. The registry is the first of its kind in Atlantic Canada and applies to all platforms. Airbnb indicated it will display registration numbers in listings and support in-product compliance workflows, consistent with its approach in other Canadian municipalities.
+      <a href="https://www.halifax.ca" target="_blank">[Halifax Regional Municipality]</a>
+    </div>
+  </section>
+
+  <!-- BRAZIL -->
+  <section class="section" id="brazil">
+    <div class="section-header brazil">🇧🇷 Brazil</div>
+    <div class="market-summary brazil">
+      <p>Brazil's travel sector posted triple H1 records: inbound foreign spend at US$5.6B (+13% YoY), outbound Brazilian spend at US$12.6B (+22.5% YoY), and domestic air at 50.1M passengers. The strong real (BRL at ~R$5.12/USD, down ~6.8% YTD for the dollar) is the single biggest structural driver. Short-term rental regulation is the week's top platform risk — Rio's STR density is the world's highest in Copacabana and is now a mainstream housing-affordability political story.</p>
+    </div>
+
+    <div class="news-item">
+      <strong>Foreign tourist spend in Brazil hits record R$28.7B (~$5.6B) in H1 2026, up 13% YoY</strong><br>
+      Brazil's Central Bank and Embratur reported international visitors spent <span class="stat up-strong">US$5.6B (R$28.7B)</span> in the first half of 2026, a 13% increase over the R$25.5B (~$5.0B) in H1 2025 and the highest first-half figure on record. Embratur president Bruno Reis attributed the gain to higher average ticket rather than pure arrival volume, noting visitors are staying longer and spending more per trip — a value-over-volume shift that directly favours STR longer-stay economics over transactional hotel nights.
+      <a href="https://embratur.com.br" target="_blank">[Embratur/PANROTAS]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Brazil logged 5.26M international arrivals in H1 2026 — second-best first half on record</strong><br>
+      Embratur data shows <span class="stat up">5,261,733</span> international arrivals in H1 2026, the second-highest first-half total in the historical series. Arrival growth lagged the 13% spend growth, confirming revenue gains came from ticket size rather than headcount. Argentina and neighboring LatAm remain dominant source markets for STR demand in Rio and São Paulo.
+      <a href="https://diariodoturismo.com.br" target="_blank">[Diário do Turismo]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Brazilian outbound spending sets all-time record at US$12.6B in H1 2026, +22.5% YoY</strong><br>
+      The strong real drove Brazilian outbound spending to a historic <span class="stat up-strong">US$12.62B</span> in H1 2026, up 22.5% YoY — the highest first-half total ever recorded. Brazilian travelers are stretching their real-denominated budgets further in USD/EUR-priced destinations. This creates meaningful demand for Airbnb supply in South America (Argentina, Chile, Colombia) and in Europe's summer markets, where Brazilian group and family bookings are rising.
+      <a href="https://embratur.com.br" target="_blank">[Embratur]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Brazil domestic air reaches 50.1M passengers in H1 2026 — industry record</strong><br>
+      ANAC reported <span class="stat up-strong">50.1M domestic passengers</span> in H1 2026, a record for any first half. The volume confirms Brazil's domestic aviation market has fully recovered and is expanding beyond pre-pandemic capacity. Gol and LATAM together serve ~80% of domestic routes; Gol's ongoing restructuring has not materially disrupted capacity. Domestic air growth underpins STR demand in secondary Brazilian cities connected by new or expanded routes.
+      <a href="https://www.anac.gov.br" target="_blank">[ANAC]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Rio's Copacabana has world's highest Airbnb listing density per km²; housing affordability debate escalates</strong><br>
+      Third-party analytics (GuestFavorites) placed Copacabana as the globally densest Airbnb neighborhood by listings per km², a statistic now circulating in Brazilian housing-affordability debates. Rio's total active Airbnb inventory is estimated at ~48,000 listings. City councillors in Rio have begun drafting ordinances modeled on Barcelona's STR cap proposals. The density figure is from a scraper, not Airbnb, and should be treated as indicative, but the political salience is real.
+      <a href="https://guestfavorites.com" target="_blank">[GuestFavorites/O Globo]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Brazil's 2027 tax reform will treat sub-90-day rentals as hotel activity for IBS/CBS</strong><br>
+      Tax attorneys confirmed this week that under Brazil's 2025 tax reform implementation rules (IBS/CBS taking effect January 2027), short-term rental income from stays under 90 days will be classified as hotel-equivalent activity and subject to IBS/CBS tax on gross revenue. The reform eliminates the current grey zone that allowed hosts to book STR income as passive rental income under the lower Simples Nacional or Carnê-Leão regimes. The practical impact: hosts earning above ~R$81,000/year in STR income face a significant tax cost increase, and platform compliance reporting requirements tighten.
+      <a href="https://www.gov.br" target="_blank">[Receita Federal/TaxNews]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Condominium-level STR control emerging as Brazil's regulatory model — not municipal caps</strong><br>
+      Legal analysts tracking Brazil's STR regulation landscape noted that the dominant emerging regulatory mechanism is condominium-assembly votes (permitted under Brazilian civil law) rather than municipal-level licensing caps. More than 200 condominium associations in São Paulo and Rio have voted to restrict or ban STR activity since Q1 2025. This bottom-up model is harder for platforms to navigate than top-down city rules: there is no single ordinance to comply with, no registry system, and enforcement falls on private civil law rather than public regulation.
+      <a href="https://www.migalhas.com.br" target="_blank">[Migalhas/Airbnb Brasil watch]</a>
+    </div>
+  </section>
+
+  <!-- MEXICO -->
+  <section class="section" id="mexico">
+    <div class="section-header mexico">🇲🇽 Mexico</div>
+    <div class="market-summary mexico">
+      <p>Mexico's Caribbean coast absorbed simultaneous blows this week: ~1M fewer US air seats, record sargassum approaching the season's highest-ever volume, a Cofepris health-inspection outbreak in Quintana Roo, and hotel supply additions (1,100+ branded rooms in Cancun) landing into weak demand. Inland Mexico (Mérida, Morelia, Acapulco) showed the clearest growth. The World Cup proved Airbnb's dynamic pricing outperformed hotels dramatically. CDMX's 97% host non-registration rate is the week's highest-urgency regulatory item.</p>
+    </div>
+
+    <div class="news-item">
+      <strong>97% of Mexico City Airbnb hosts absent from the city's mandatory platform registry</strong><br>
+      Mexico City's government reported that of more than <span class="stat neutral">13,000 Airbnb hosts</span> operating in the capital, only ~400 are enrolled in the Padrón de Plataformas de Estancias Turísticas — approximately <span class="stat down">3% compliance</span>. The registry was created to bring STRs into the local tourism and tax system amid gentrification backlash in Roma, Condesa and Juárez. The near-total non-compliance sets up a likely enforcement escalation against both hosts and platforms. Proactive in-product host registration tooling in CDMX is the clearest defensive play.
+      <a href="https://oem.com.mx/elsoldemexico" target="_blank">[El Sol de México]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>World Cup lifted Mexican Airbnb revenue +60%+ via rates, not occupancy; hotels missed targets badly</strong><br>
+      AirDNA data showed the 2026 FIFA World Cup boosted STR revenue in Guadalajara, Monterrey and Mexico City primarily through pricing — booked Airbnb rates rose <span class="stat up-strong">+60%+ YoY</span> on match days. Hotels underperformed sharply: ANCH reported the three host cities averaged only 57–65% occupancy versus 90% expected. Validates smart-pricing guidance for host acquisition in secondary Mexican cities.
+      <a href="https://www.eleconomista.com.mx" target="_blank">[El Economista/AirDNA]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>US airlines cut ~1M seats to Mexico this summer; Cancun alone loses 570,000</strong><br>
+      US carriers are deploying roughly <span class="stat down">1 million fewer seats</span> to Mexico during summer 2026 versus 2025, with beach destinations bearing nearly all the reduction. Cancun lost <span class="stat down">570,000+ seats</span>; Puerto Vallarta and Los Cabos also among the steepest cuts. Mexico City and Guadalajara actually grew capacity. Air capacity is the binding constraint on Caribbean-coast STR demand — Cancun, Riviera Maya and Los Cabos hosts face structurally fewer US arrivals this summer while CDMX and Guadalajara gain.
+      <a href="https://ggnorth.com" target="_blank">[Gringo Gazette North/Marcrix]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Riviera Maya occupancy still sliding at peak; Playa del Carmen at 62.8%</strong><br>
+      Quintana Roo hotel occupancy remained depressed through the summer peak. Riviera Maya reached <span class="stat neutral">68.8%</span> in late July (only ~1pp above last year), while Playa del Carmen slipped to <span class="stat down">62.8%</span> as record sargassum kept beachfront demand weak. Statewide average hit just <span class="stat down">59.6%</span> in the week of Jul 4–10, the weakest summer start in several years and below Sectur's 65% national target. Soft hotel occupancy creates direct rate-compression pressure on STR hosts in Playa del Carmen and Tulum.
+      <a href="https://www.reportur.com" target="_blank">[REPORTUR/Quadratin QRoo]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Tulum hoteliers weigh seasonal-only operation as record sargassum wrecks economics</strong><br>
+      David Ortiz Mena, president of the Mexican Caribbean Hotel Council, said Tulum coastal hoteliers are evaluating operating only outside sargassum season. Authorities warned roughly half of 2026's sargassum volume has yet to arrive, and Quintana Roo is close to surpassing last year's record. If hotels seasonally shutter, STRs become the default supply in shoulder months — opportunity but also same demand-collapse exposure. Inland, cenote and jungle-setting listings are better positioned than beachfront.
+      <a href="https://www.reportur.com" target="_blank">[REPORTUR/La Jornada]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Cofepris inspects Quintana Roo hotels over cyclosporiasis cases</strong><br>
+      Mexico's health ministry confirmed Cofepris is inspecting tourist establishments in Quintana Roo linked to a cluster of cyclosporiasis (foodborne parasite) cases. The action adds a third simultaneous negative signal for QRoo alongside sargassum and seat cuts. Health incidents at all-inclusives historically push a slice of demand toward self-catering STRs where guests control their own food — a secondary tailwind for full-home listings with kitchens in the Riviera Maya.
+      <a href="https://www.reportur.com" target="_blank">[REPORTUR]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Sectur forecasts 22.4M summer travelers with growth led by Mérida, Morelia and Acapulco</strong><br>
+      Mexico's tourism ministry projected <span class="stat up">22.4M travelers</span> over the Jul 20–Aug 30 summer window, generating ~MX$883B (~$47B) in economic spillover, with a 65% average hotel occupancy target. Actual Quintana Roo results are running well below that national target. Growth is concentrated in inland colonial and cultural cities: Mérida, Morelia and Acapulco lead arrival growth. These are under-supplied Airbnb markets relative to Cancun and CDMX.
+      <a href="https://www.gob.mx/sectur" target="_blank">[Sectur/La Jornada]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Acapulco posts recovery milestone: 313 hotels and 17,555 rooms back online post-Otis</strong><br>
+      Acapulco presented its Algo Nuevo Bajo el Sol campaign, reporting <span class="stat up">313 hotels and 17,555 rooms</span> now operational, a key milestone in the port's Hurricane Otis recovery. Domestic air connectivity rebuilt across 6 departure cities on 4 carriers. Sectur named Acapulco one of the three fastest-growing summer destinations. Acapulco is a domestic-demand, drive-and-short-haul market where STR historically outperforms.
+      <a href="https://www.traviatic.com" target="_blank">[Traviatic]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Hurricane Genevieve (Cat 5) disrupts Pacific coast; Puerto Vallarta beaches closed</strong><br>
+      Hurricane Genevieve reached Category 5 off Baja California, forcing beach closures across Puerto Vallarta and logging 270 delays and 27 cancellations across Mexican airports in a single day. The Pacific coast disruption compounds an already weak summer where US seat capacity had been cut. Flexible-cancellation messaging and extenuating-circumstances clarity matter most in PVR and Los Cabos through October.
+      <a href="https://www.vallartadaily.com" target="_blank">[Vallarta Daily/Travel and Tour World]</a>
+    </div>
+
+    <div class="news-item">
+      <strong>Nearly 11,000 hotels litigating against Booking.com over parity clauses</strong><br>
+      Close to <span class="stat neutral">11,000 hotels</span> have joined litigation against Booking.com over best-price-parity clauses, following the EU court ruling that parity clauses were not ancillary restraints. Mexican independent hotels and boutique properties are watching as potential claimants. OTA-supplier friction creates an opening for platforms with non-parity, host-friendly terms — a live supply-acquisition angle for Airbnb's hotels and rooms category in Mexico.
+      <a href="https://www.reportur.com" target="_blank">[REPORTUR]</a>
+    </div>
+  </section>
+
+  <!-- IMPLICATIONS -->
+  <section class="section" id="implications">
+    <div class="section-header implications">💡 Airbnb Implications</div>
+
+    <div class="news-item key-signals">
+      <strong>🔴 P0 — CDMX Regulatory Crisis: 97% non-compliance is a headline waiting to become a mandate</strong><br>
+      With 13,000+ Airbnb hosts in Mexico City and only ~400 registered in the Padrón, the 97% non-registration headline is the kind of number that drives listing-removal mandates and platform-liability rules. The Barcelona and Paris playbooks follow this arc: high non-compliance → political pressure → platform co-enforcement requirements. Airbnb needs proactive in-product registration tooling and a public compliance commitment in CDMX before the enforcement escalation comes.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🔴 P0 — Brazil STR Tax Reform (2027): Platform reporting obligations incoming</strong><br>
+      Brazil's 2027 IBS/CBS reform classifying sub-90-day rentals as hotel activity is a structural cost shift for hosts and a reporting obligation for platforms. Hosts earning above ~R$81,000/year in STR income face meaningful tax increases. Airbnb should begin in-product education for Brazilian hosts now — proactive guidance on the new regime builds loyalty and avoids the churn that follows surprise tax bills.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🟡 P1 — Brazil Outbound Boom: Strong BRL creates cross-market demand surge</strong><br>
+      Brazilian outbound spend at US$12.6B (+22.5%) is the largest H1 outbound surge since the pre-2015 boom. Brazilian travelers are the fastest-growing inbound source for Cancun/Riviera Maya (up 28% to QRoo), Argentina, and Southern Europe. Airbnb listing quality, Portuguese-language support, and group-home supply in key Brazilian-demand destinations are near-term levers. The strong BRL window may not last — this is a 2026 capture moment.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🟡 P1 — Mexico Caribbean Supply Pressure: 1,100+ branded rooms land into soft demand</strong><br>
+      Riu Palace (618 rooms reopened) plus Grand Hyatt Cancun (500 rooms, November 2026) land into a year where QRoo occupancy is running 5–8pp below national target. STR hosts in Cancun/Riviera Maya will face severe rate compression from all-inclusive competition through Q4 2026 and Q1 2027. Dynamic pricing guidance and long-stay discounting messaging to hosts are the near-term mitigation tools.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🟡 P1 — Mexico Inland Supply Gap: Mérida, Morelia, Acapulco are under-supplied Airbnb markets</strong><br>
+      Sectur's data shows inland colonial and cultural cities leading Mexico's 2026 summer growth while the Caribbean coast struggles. These markets are significantly under-supplied on Airbnb relative to their demand trajectory. Host acquisition campaigns in Mérida, Morelia, Guadalajara and the recovering Acapulco market represent the clearest 2026 supply-growth opportunity in Mexico.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🟢 P2 — World Cup Proof Point: Airbnb outperformed hotels 3-to-1 on ADR during mega-events</strong><br>
+      AirDNA data from the World Cup host cities (Guadalajara, Monterrey, CDMX) showed Airbnb booked rates up 60%+ on match days while hotels managed only 57–65% occupancy versus 90% expected. This is a concrete proof point for: (a) dynamic-pricing host education in Mexico and globally, and (b) the value proposition of STR over hotels for mega-event travelers who prioritize location and group sleeping arrangements.
+    </div>
+
+    <div class="news-item key-signals">
+      <strong>🟢 P2 — Canada STR Supply Tightening: Victoria joins Vancouver/Toronto; occupancy upside</strong><br>
+      Victoria's principal-residence-only ordinance (effective Oct 1, 2026) follows Vancouver's 2023 playbook and will remove an estimated 30–40% of supply in a high-demand leisure destination. Compliant hosts in Victoria face occupancy and rate tailwinds heading into 2027. Airbnb's proactive compliance tooling and host communication in Victoria will be watched as a model by Halifax (registry just launched) and other Atlantic Canada municipalities.
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="section" id="sources">
+    <div class="section-header sources">📚 Sources &amp; Methodology</div>
+    <table>
+      <thead>
+        <tr><th>Market</th><th>Key Sources</th><th>Coverage</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🇺🇸 US</td>
+          <td>TSA, US Travel Association, AirDNA, NYC OSE, Southwest Airlines</td>
+          <td>Jul 27–Aug 2, 2026</td>
+        </tr>
+        <tr>
+          <td>🇨🇦 Canada</td>
+          <td>Statistics Canada, Destination Toronto, City of Victoria, Air Canada, Halifax Regional Municipality</td>
+          <td>Jul 27–Aug 2, 2026</td>
+        </tr>
+        <tr>
+          <td>🇧🇷 Brazil</td>
+          <td>Embratur, ANAC, Diário do Turismo, GuestFavorites, Receita Federal, Migalhas</td>
+          <td>Jul 27–Aug 2, 2026</td>
+        </tr>
+        <tr>
+          <td>🇲🇽 Mexico</td>
+          <td>REPORTUR, El Economista (AirDNA), Sectur, El Sol de México, Traviatic, Vallarta Daily, Gringo Gazette North, Quadratin QRoo</td>
+          <td>Jul 27–Aug 2, 2026</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:#adb5bd;margin-top:12px;line-height:1.6;">
+      Data points cross-checked across multiple sources where available. BRL/USD rate: ~R$5.12 = US$1 (Jul 28, 2026). MXN/USD rate: ~17 MXN = US$1. Third-party STR analytics (AirDNA, GuestFavorites) are indicative estimates and not Airbnb internal data. Copacabana listing-density figure is from a third-party scraper; treat as directionally useful, precision unverified. Sectur summer forecast (Jul 19 source) used as baseline context only.
+    </p>
+  </section>
+
+  <footer>
+    <p>🌎 <strong>Americas Travel Weekly</strong> — Covering US, Canada, Brazil &amp; Mexico</p>
+    <p style="margin-top:6px;">Jul 27 – Aug 2, 2026 · Prepared by OpenClaw for Airbnb APAC</p>
+    <p style="margin-top:6px;"><a href="../americas-weekly/" style="color:#adb5bd;">← All Issues</a></p>
+  </footer>
+
+</div>
+
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://ibread.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<script>
+  // Active nav on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.page-nav a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.page-nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
