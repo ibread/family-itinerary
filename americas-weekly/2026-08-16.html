@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <title>🌎 Americas Travel Weekly — Aug 10–16, 2026</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:58px; }
+    body { font-family:'Source Serif 4', Georgia, serif; font-size:15px; line-height:1.55; background:#fafbfc; color:#1a1a2e; -webkit-font-smoothing:antialiased; }
+    .container { max-width:720px; margin:0 auto; padding:0 20px 24px; }
+    header { background:linear-gradient(135deg,#1a1a2e 0%,#2d2d44 100%); color:#fff; padding:30px 20px; margin:0 -20px 22px; box-shadow:0 4px 12px rgba(26,26,46,.15); position:relative; overflow:hidden; }
+    header:after { content:""; position:absolute; right:-70px; top:-70px; width:170px; height:170px; background:rgba(255,90,95,.18); border-radius:50%; }
+    header h1 { font-family:'DM Sans',sans-serif; font-size:28px; font-weight:700; letter-spacing:-.5px; margin-bottom:6px; position:relative; z-index:1; }
+    header .dates { font-size:14px; opacity:.88; position:relative; z-index:1; }
+    header .dek { margin-top:12px; font-size:14px; max-width:620px; opacity:.92; position:relative; z-index:1; }
+    header .back-link { position:absolute; top:12px; right:20px; color:rgba(255,255,255,.76); text-decoration:none; font-size:13px; z-index:2; }
+    .page-nav { position:sticky; top:0; background:rgba(255,255,255,.96); backdrop-filter:blur(10px); padding:8px 0; margin-bottom:14px; border-bottom:1px solid #e9ecef; box-shadow:0 2px 8px rgba(0,0,0,.04); overflow-x:auto; white-space:nowrap; z-index:100; }
+    .page-nav a { display:inline-block; padding:6px 13px; margin:0 3px; font-size:13px; font-family:'DM Sans',sans-serif; color:#6c757d; text-decoration:none; border-radius:20px; }
+    .page-nav a:hover,.page-nav a.active { background:linear-gradient(135deg,#1a1a2e 0%,#2d2d44 100%); color:#fff; }
+    .section { margin-bottom:16px; background:#fff; border-radius:12px; padding:14px; box-shadow:0 2px 8px rgba(0,0,0,.04); border:1px solid rgba(0,0,0,.04); }
+    .section-header { font-family:'DM Sans',sans-serif; font-size:20px; font-weight:700; padding:6px 0 6px 14px; margin-bottom:10px; border-left:4px solid; }
+    .us { border-color:#3b5998; } .canada { border-color:#dc3545; } .brazil { border-color:#2d936c; } .mexico { border-color:#e07a5f; }
+    .signals { border-color:#ff5a5f; } .implications { border-color:#27ae60; } .competitor { border-color:#9b59b6; } .holidays { border-color:#f39c12; } .sources { border-color:#6c757d; }
+    .key-numbers { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:14px; }
+    .kpi-tile { background:linear-gradient(135deg,#f8f9fa 0%,#fff 100%); border-radius:10px; padding:15px 10px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,.05); border:1px solid rgba(0,0,0,.04); }
+    .big-number { font-family:'DM Sans',sans-serif; font-size:33px; font-weight:700; line-height:1.1; margin-bottom:4px; }
+    .red { color:#dc3545; } .green { color:#2d936c; } .blue { color:#3b5998; } .warm { color:#e07a5f; } .purple { color:#9b59b6; }
+    .label { font-size:12px; color:#6c757d; font-family:'DM Sans',sans-serif; }
+    .market-summary { font-size:13px; padding:12px 14px; margin-bottom:10px; background:#f0f2f5; border-radius:10px; border-left:4px solid; }
+    .market-summary ul { margin-left:16px; }
+    .market-summary li { margin:6px 0; }
+    .news-item { padding:10px 0; border-bottom:1px solid #f1f3f5; font-size:14px; color:#2d3436; }
+    .news-item:last-child { border-bottom:none; }
+    .news-item strong { font-family:'DM Sans',sans-serif; font-weight:700; color:#1a1a2e; }
+    .stat { font-family:'DM Sans',sans-serif; font-weight:700; } .stat.up { color:#2d936c; } .stat.up-strong { color:#1a7a52; } .stat.down { color:#dc3545; } .stat.neutral { color:#e07a5f; }
+    a { color:#52616f; text-decoration:none; border-bottom:1px solid rgba(82,97,111,.25); } a:hover { color:#1a1a2e; border-color:#1a1a2e; }
+    .source-tag { font-size:12px; color:#6c757d; margin-left:4px; white-space:nowrap; }
+    .calendar-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .holiday { border-radius:10px; padding:11px; background:#f8f9fa; border:1px solid #edf0f2; }
+    .holiday .date { font-family:'DM Sans',sans-serif; font-weight:700; font-size:13px; color:#1a1a2e; }
+    .holiday .country { font-size:12px; color:#6c757d; margin-top:2px; }
+    .sources-list { columns:1; font-size:12px; color:#495057; }
+    .sources-list li { margin:5px 0 5px 18px; break-inside:avoid; }
+    footer { margin-top:30px; padding-top:18px; border-top:1px solid #e9ecef; font-size:12px; color:#9aa2aa; text-align:center; }
+    @media (max-width:600px) { .key-numbers { grid-template-columns:repeat(2,1fr); } .calendar-grid { grid-template-columns:1fr; } header h1 { font-size:25px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="../americas-weekly/" class="back-link">← All Issues</a>
+    <h1>🌎 Americas Travel Weekly</h1>
+    <div class="dates">Aug 10 – Aug 16, 2026</div>
+    <div class="dek">Airfare inflation, Canada’s uneven U.S. recovery, Brazil’s experience-led momentum, and Mexico’s destination divergence shaped the week.</div>
+  </header>
+
+  <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%); border-radius: 12px; padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.06);">
+    <span style="font-size: 22px;">🎙️</span>
+    <div style="flex: 1;">
+      <div style="font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; color: #1a1a2e; margin-bottom: 6px;">Listen to this issue</div>
+      <audio controls preload="none" style="width: 100%; height: 36px;">
+        <source src="https://github.com/ibread/sites/releases/download/audio-assets/americas-weekly-2026-08-16.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <nav class="page-nav" id="page-nav">
+    <a href="#signals" class="active">🔥 Signals</a><a href="#implications">💡 Implications</a><a href="#competitors">🏢 Watch</a><a href="#us">🇺🇸 US</a><a href="#canada">🇨🇦 Canada</a><a href="#brazil">🇧🇷 Brazil</a><a href="#mexico">🇲🇽 Mexico</a><a href="#holidays">📅 Peaks</a><a href="#sources">Sources</a>
+  </nav>
+
+  <section class="section" id="signals">
+    <div class="section-header signals">🔥 Key Signals</div>
+    <div class="key-numbers">
+      <div class="kpi-tile"><div class="big-number red">+25.5%</div><div class="label">US airline tickets YoY; lodging only +2.6%</div></div>
+      <div class="kpi-tile"><div class="big-number green">+6.3%</div><div class="label">Canada July international arrivals YoY (6.8M)</div></div>
+      <div class="kpi-tile"><div class="big-number blue">+46%</div><div class="label">Brazil arrivals vs 2019 (9.3M in 2025)</div></div>
+      <div class="kpi-tile"><div class="big-number warm">−5.3%</div><div class="label">Mexico June air tourists YoY; spend +5.9%</div></div>
+    </div>
+    <div class="news-item"><strong>1. Americas demand is not weak; it is uneven and price-sensitive.</strong> U.S. transport inflation is biting hardest in airfare and gasoline, while lodging inflation is much milder. That points to shorter, drive-to, value-explicit trips rather than a simple demand slowdown. <span class="source-tag">U.S. Travel, BTS</span></div>
+    <div class="news-item"><strong>2. Canada and Mexico both show “more value, not always more volume.”</strong> Canada inbound arrivals rose across U.S. and overseas source markets, while Canadian travel back to the U.S. is still far below 2024. Mexico’s international visitor spend rose even as air-tourist arrivals fell. <span class="source-tag">Statistics Canada, INEGI</span></div>
+    <div class="news-item"><strong>3. Brazil is the strongest growth story this week.</strong> Inbound arrivals are now far above 2019 levels, outbound card spending surged <span class="stat up-strong">+37% YoY</span>, and event/nature travel signals are unusually clear. <span class="source-tag">OECD/Embratur, Skyscanner</span></div>
+    <div class="news-item"><strong>4. Platform competition is moving from beds to trip ecosystems.</strong> Airbnb is extending through Tripadvisor experiences and CarTrawler; Expedia is pushing AI talent and B2B distribution; Xcaret and TourRadar are building integrated or cross-operator loyalty layers. <span class="source-tag">Skift, Reportur, TravelPress</span></div>
+  </section>
+
+  <section class="section" id="implications">
+    <div class="section-header implications">💡 Airbnb Americas Implications</div>
+    <div class="news-item"><strong>1. Make value legible, not cheap.</strong> In the U.S., Brazil and Canada, consumers are reacting to trip-cost volatility. Airbnb can win by surfacing total trip cost, parking/kitchen/laundry savings, and group-per-person economics, especially for drive and family occasions.</div>
+    <div class="news-item"><strong>2. Destination truth matters more than national averages.</strong> Mazatlán at <span class="stat up">84%</span> occupancy and Tulum at <span class="stat down">15–20%</span> for selected hotels cannot be managed with one Mexico message. Market playbooks should separate winners, recovery bets and trust-risk destinations.</div>
+    <div class="news-item"><strong>3. Experiences are becoming a demand acquisition surface.</strong> Brazil’s event trips, Mexico’s Xcaret ecosystem, and Airbnb’s Tripadvisor partnership all point to the stay being bundled with what the traveler does there.</div>
+    <div class="news-item"><strong>4. Responsible hosting is a strategic defense in stressed destinations.</strong> Tulum’s sargassum and sanitation debate shows that platform inventory can become a destination-management flashpoint. Airbnb needs quality, tax/sanitation contribution clarity, and honest guest information.</div>
+  </section>
+
+  <section class="section" id="competitors">
+    <div class="section-header competitor">🏢 Competitor & Platform Watch</div>
+    <div class="news-item"><strong>Airbnb widens distribution through partners.</strong> Tripadvisor/Viator experiences are set to flow into Airbnb, while CarTrawler-powered rentals are already producing several hundred daily bookings in five markets. This accelerates breadth but raises questions on margin, data ownership and quality control.</div>
+    <div class="news-item"><strong>Expedia is fighting on AI talent and B2B embedded distribution.</strong> Skift reported a San Jose AI/ML hub and B2B gross bookings growing at more than twice the consumer business rate. The constraint is execution capacity, not merely AI messaging.</div>
+    <div class="news-item"><strong>Xcaret, TourRadar and WestJet show three different ecosystem plays.</strong> Xcaret scales to a projected 2,400-room integrated resort; TourRadar launches loyalty across 2,500 operators; WestJet improves codeshare reach and advisor self-service.</div>
+  </section>
+
+  <section class="section" id="us">
+    <div class="section-header us">🇺🇸 United States</div>
+    <div class="market-summary us"><ul>
+      <li>Travel affordability split sharply: airline tickets <span class="stat down">+25.5% YoY</span>, gasoline <span class="stat down">+24.6% YoY</span>, but lodging only <span class="stat up">+2.6% YoY</span> and <span class="stat up">−3.3% MoM</span>.</li>
+      <li>Domestic hotel demand remains resilient and top-heavy, carried by affluent households, group demand and corporate transient travel while inbound recovery lags.</li>
+      <li>Cross-border travel is asymmetric: Q1 inbound air arrivals fell <span class="stat down">−1.2% YoY</span>, while U.S. outbound air departures rose <span class="stat up">+1.0%</span>.</li>
+    </ul></div>
+    <div class="news-item"><strong>1. Price pressure is transport-led.</strong> U.S. Travel’s Travel Price Index and BTS CPI both point to airfare and gasoline as the main consumer pain points. Airbnb’s practical opening is the whole-trip value story: close-to-home stays, kitchens, parking and group cost sharing. <a href="https://www.ustravel.org/research/travel-price-index">U.S. Travel</a></div>
+    <div class="news-item"><strong>2. Inbound is concentrated and uneven.</strong> NTTO Q1 data showed 9.6M international air visitors to the U.S. (<span class="stat down">−1.2% YoY</span>). Florida, California, New York, Nevada and Texas represented 81% of visitation, making gateway targeting more important than broad national messaging. <a href="https://www.familytravel.org/2026/08/12/national-travel-and-tourism-office-publishes-2026-q1-results/">NTTO via FTA</a></div>
+    <div class="news-item"><strong>3. Canada recovery is mostly drive-led.</strong> Canadian return trips from the U.S. rose <span class="stat up">+10.2% YoY</span> in July, but air trips fell <span class="stat down">−1.4%</span> and car trips remain <span class="stat down">−28.9%</span> versus 2024. <a href="https://skift.com/2026/08/11/canadian-travel-to-the-u-s-ticks-up-again-but-still-far-from-a-full-recovery/">Skift</a></div>
+  </section>
+
+  <section class="section" id="canada">
+    <div class="section-header canada">🇨🇦 Canada</div>
+    <div class="market-summary canada"><ul>
+      <li>July inbound arrivals strengthened: 6.8M international arrivals, <span class="stat up">+6.3% YoY</span>, including U.S. residents <span class="stat up">+6.5%</span> and overseas residents <span class="stat up">+5.7%</span>.</li>
+      <li>Montreal is on track for a record tourism year, with hotel bookings <span class="stat up">+12%</span> and May–July occupancy at <span class="stat up">82%</span>.</li>
+      <li>Canadian travel to the U.S. is improving off a weak base, but air and auto volumes remain roughly 27–29% below 2024.</li>
+    </ul></div>
+    <div class="news-item"><strong>1. Canada inbound has a real summer tailwind.</strong> Statistics Canada’s leading indicator shows broad-based growth, and World Cup-related overseas source countries saw air arrivals rise <span class="stat up">+18.7% YoY</span>. <a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260811/dq260811a-eng.htm">Statistics Canada</a></div>
+    <div class="news-item"><strong>2. Outbound wallet share is rotating south, but not only to the U.S.</strong> Dominican Republic, Costa Rica and Jamaica signals point to Caribbean and Latin American substitution, while Florida/Kissimmee sentiment is improving but capacity remains impaired. <a href="https://www.paxnews.com/news/tourism-board/jamaica-expects-400000-seats-canada-winter">PAX News</a></div>
+    <div class="news-item"><strong>3. Airline and operator economics are under pressure.</strong> Air Canada reported Q2 operating revenue of C$6.3B (~US$4.6B), <span class="stat up">+11% YoY</span>, but fuel and labour-related charges pressured margins. <a href="https://www.travelpress.com/air-canada-reports-second-quarter-2026-financial-results/">TravelPress</a></div>
+  </section>
+
+  <section class="section" id="brazil">
+    <div class="section-header brazil">🇧🇷 Brazil (Brasil)</div>
+    <div class="market-summary brazil"><ul>
+      <li>Brazil is outperforming major mature inbound destinations: arrivals grew <span class="stat up-strong">+46%</span> from 2019 to 2025, and H1 2026 air arrivals rose <span class="stat up">+13.3% YoY</span>.</li>
+      <li>Domestic aviation is large and concentrated: 50.2M H1 passengers split almost entirely across LATAM, GOL and Azul.</li>
+      <li>Experience-led demand is strong: event travel, glamping/ecotourism search and multi-city outbound itineraries all showed fresh momentum.</li>
+    </ul></div>
+    <div class="news-item"><strong>1. Event demand can move destinations fast.</strong> Barretos had the fastest destination-search growth among Brazilians at <span class="stat up-strong">+383%</span>, with August searches <span class="stat up">+64% YoY</span> around Festa do Peão. <a href="https://noticias.r7.com/prisma/luiz-fara-monteiro/barretos-volta-a-se-destacar-nas-buscas-por-passagens-em-agosto-mes-da-festa-do-peao-16082026/">R7</a></div>
+    <div class="news-item"><strong>2. Airfare inflation is high, but tactical discounts still matter.</strong> July airfares rose <span class="stat down">+11.67%</span> against headline IPCA of only <span class="stat neutral">+0.07%</span>, while promotional domestic round trips from R$339 (~US$63) show bargain windows remain powerful. <a href="https://www.mercadoeeventos.com.br/noticias/aviacao/ipca-sobe-007-em-julho-mas-passagem-aerea-dispara-1167/">Mercado & Eventos</a></div>
+    <div class="news-item"><strong>3. Airbnb’s Brazil story has both growth and policy relevance.</strong> Q2 commentary cited Brazil-origin net nights up about <span class="stat up-strong">+30% YoY</span>; an FGV study estimated Airbnb-linked Brasília activity at R$1.6B (~US$300M), <span class="stat up">+27% YoY</span>. <a href="https://jornaldebrasilia.com.br/brasilia/airbnb-movimenta-mais-de-r1-bilhao-em-brasilia-e-acirra-disputa-com-hoteis/">Jornal de Brasília</a></div>
+  </section>
+
+  <section class="section" id="mexico">
+    <div class="section-header mexico">🇲🇽 Mexico (México)</div>
+    <div class="market-summary mexico"><ul>
+      <li>Mexico monetized fewer air tourists better: June air tourists fell <span class="stat down">−5.3% YoY</span>, but international visitor spend rose <span class="stat up">+5.9%</span> and average air-tourist spend rose <span class="stat up">+9.6%</span>.</li>
+      <li>Summer performance is highly destination-specific: Mazatlán reported <span class="stat up">84%</span> average occupancy, while selected Tulum hotels ran at <span class="stat down">15–20%</span>.</li>
+      <li>Riviera Maya competition is shifting toward integrated experiences, with Xcaret expanding toward 2,400 rooms while Tulum faces sargassum and sanitation pressure.</li>
+    </ul></div>
+    <div class="news-item"><strong>1. Mazatlán shows domestic family/leisure strength.</strong> The destination reported more than 770,000 visitors in July and early August, <span class="stat up">84%</span> average occupancy, and MX$3.7B (~US$202M) in tourism spend. <a href="https://www.razon.com.mx/estados/2026/08/10/gran-verano-en-mazatlan-suma-mas-de-770-mil-visitantes-y-84-de-ocupacion-hotelera/">La Razón</a></div>
+    <div class="news-item"><strong>2. Tulum is a trust and destination-management warning.</strong> May–July visitation was reported about <span class="stat down">−20%</span> versus 2025; sargassum removal can exceed MX$500,000 (~US$27,300) per week, and some operators are considering seasonal operation. <a href="https://www.eleconomista.com.mx/estados/caida-turistica-hoteles-tulum-optan-operar-estacionalmente-20260812-827981.html">El Economista</a></div>
+    <div class="news-item"><strong>3. Guadalajara gets more international connectivity.</strong> Volaris plans four new routes from Dec. 1 and holds 5.45M summer Mexico–U.S. two-way seats, <span class="stat up">+12% YoY</span>, with share rising to 21.4%. <a href="https://travelmole.com/news/guadalajara-volaris-new-routes">TravelMole</a></div>
+  </section>
+
+  <section class="section" id="holidays">
+    <div class="section-header holidays">📅 Upcoming Holidays & Travel Peaks</div>
+    <div class="calendar-grid">
+      <div class="holiday"><div class="date">Aug 20–30</div><div><strong>Festa do Peão de Barretos</strong></div><div class="country">🇧🇷 Event-led domestic travel peak</div></div>
+      <div class="holiday"><div class="date">Sep 1</div><div><strong>U.S. Labor Day planning window</strong></div><div class="country">🇺🇸 Late-summer drive and family stays</div></div>
+      <div class="holiday"><div class="date">Sep 7</div><div><strong>Labour Day / Independence Day</strong></div><div class="country">🇨🇦 Canada Labour Day; 🇧🇷 Brazil Independence Day</div></div>
+      <div class="holiday"><div class="date">Sep 16</div><div><strong>Mexican Independence Day</strong></div><div class="country">🇲🇽 Domestic city breaks and cultural trips</div></div>
+      <div class="holiday"><div class="date">Dec 1</div><div><strong>Volaris route launches</strong></div><div class="country">🇲🇽 Guadalajara to Washington, Atlanta, Medellín, Guatemala City</div></div>
+      <div class="holiday"><div class="date">2026–27 winter</div><div><strong>Canada-Caribbean season</strong></div><div class="country">🇨🇦 Jamaica expects ~400,000 Canada-origin seats</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="sources">
+    <div class="section-header sources">📋 Sources Audit</div>
+    <ul class="sources-list">
+      <li>U.S.: U.S. Travel Association Travel Price Index (Aug 12); BTS Transportation CPI (Aug 12); DOT Air Travel Consumer Report (Aug 11); NTTO Q1 results via Family Travel Association (Aug 12); Hotel News Resource Hotel Data Conference (Aug 14); Skift Airbnb/Expedia coverage (Aug 10–15).</li>
+      <li>Canada: Statistics Canada July international arrivals indicator (Aug 11); CityNews Montreal / Tourisme Montréal (Aug 12); TravelPress and PAX News airline, advisor and destination coverage (Aug 10–14); Air Canada Vacations / CNW (Aug 10).</li>
+      <li>Brazil: PANROTAS airline passenger data (Aug 11); Mercado & Eventos airfare/IPCA and Quero Passagem items (Aug 11/14); Breaking Travel News OECD/Embratur item (Aug 11); R7 Barretos/niche-travel signals (Aug 16); Jornal de Brasília Airbnb/FGV item (Aug 14).</li>
+      <li>Mexico: La Razón Mazatlán (Aug 10); El Financiero / INEGI tourism value-volume data (Aug 13); El Economista and Noticaribe Tulum occupancy/sargassum items (Aug 12); Reportur Xcaret/sargassum (Aug 10/16); TravelMole Volaris (Aug 12); Spectrum News visa pilot (Aug 10).</li>
+      <li>Date integrity: collection files retained only sources published between Aug 10 and Aug 16, 2026; zero date-unverified items were included in the final synthesis.</li>
+    </ul>
+  </section>
+
+  <footer>Powered by 🦞 Max (小可) | Sources as of Aug 16, 2026</footer>
+</div>
+<script>
+  const navLinks=[...document.querySelectorAll('.page-nav a')];
+  const sections=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const onScroll=()=>{let current=sections[0]?.id; for(const s of sections){ if(s.getBoundingClientRect().top<90) current=s.id; } navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));};
+  document.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+</script>
+<script data-goatcounter="https://ibread.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
