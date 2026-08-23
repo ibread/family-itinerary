@@ -5,6 +5,14 @@
      xmlns:podcast="https://podcastindex.org/namespace/1.0"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
+  <item>
+    <title>🌏 Asia Travel Weekly</title>
+    <link>https://ibread.github.io/sites/travel-weekly/2026-08-23.html</link>
+    <guid>https://ibread.github.io/sites/travel-weekly/2026-08-23.html</guid>
+    <pubDate>Sun, 23 Aug 2026 21:45:00 +0800</pubDate>
+    <description>Asia Travel Weekly report for the week ending 2026-08-23.</description>
+  </item>
+
     <title>Asia Travel Weekly</title>
     <link>https://ibread.github.io/sites/travel-weekly/</link>
     <description>Weekly Asia travel industry intelligence report covering India, Korea, Japan, China, Southeast Asia, and Hong Kong &amp; Taiwan. Consumer signals, domestic/inbound trends, policy changes, competitor dynamics, and Airbnb-specific implications.</description>
