@@ -59,29 +59,46 @@ const DATA={
   days:[
    {t:'总览',spots:[
      {n:'悉尼机场 SYD',e:'✈️',ty:'transport',la:-33.9399,lo:151.1753,d:'9/26 19:25 落地（OZ601）'},
-     {n:'Marriott 环形码头',e:'🏨',ty:'hotel',la:-33.8637,lo:151.2113,d:'首选酒店（可免费取消）· 出门即渡轮码头'},
-     {n:'悉尼歌剧院',e:'🎭',ty:'attraction',la:-33.8568,lo:151.2153,d:'Wild Things 儿童艺术节 9/26–10/11'},
-     {n:'塔龙加动物园',e:'🦘',ty:'kids',la:-33.8434,lo:151.2413,d:'渡轮 + Sky Safari 缆车，单排一天'},
-     {n:'达令港',e:'🎡',ty:'attraction',la:-33.8737,lo:151.1998,d:'水族馆 / 野生动物园 / 儿童乐园'},
-     {n:'邦迪海滩',e:'🏖️',ty:'attraction',la:-33.8908,lo:151.2743,d:'待定：Bondi–Coogee 海崖步道'}
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'已定住宿 · The Rocks 岩石区，176 Cumberland St；步行可达环形码头'},
+     {n:'悉尼歌剧院 Sydney Opera House',e:'🎭',ty:'attraction',la:-33.8568,lo:151.2153,d:'Wild Things 儿童艺术节 · ZOOOM 9/26–9/29'},
+     {n:'塔龙加动物园 Taronga Zoo',e:'🦘',ty:'kids',la:-33.8434,lo:151.2413,d:'港湾渡轮抵达，安排完整一天；Sky Safari 整修中，预计 2027 年底重开'},
+     {n:'达令港 Darling Harbour',e:'🎡',ty:'attraction',la:-33.8737,lo:151.1998,d:'SEA LIFE 水族馆 + Darling Quarter 儿童游乐场'},
+     {n:'岩石区 The Rocks',e:'🏘️',ty:'attraction',la:-33.8586,lo:151.2098,d:'酒店门口的历史街区，可看海港大桥'}
    ]},
    {t:'9/26 抵达',spots:[
-     {n:'悉尼机场 SYD',e:'✈️',ty:'transport',la:-33.9399,lo:151.1753,d:'19:25 落地，机场快线 13 分钟到市区'},
-     {n:'Marriott 环形码头',e:'🏨',ty:'hotel',la:-33.8637,lo:151.2113,d:'入住休整，附近吃个简餐'}
+     {n:'悉尼机场 SYD',e:'✈️',ty:'transport',la:-33.9399,lo:151.1753,d:'19:25 落地（OZ601）；建议直接打车/预约接机至酒店，避免带娃拖行李换乘'},
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'入住、休整；晚餐以酒店或 The Rocks 附近简餐为主'}
    ]},
-   {t:'9/27',spots:[]},
-   {t:'9/28',spots:[]},
-   {t:'9/29',spots:[]},
+   {t:'9/27 海港+ZOOOM',spots:[
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'上午从酒店步行出发，路线平缓、便于 Amy 控制脚踝负荷'},
+     {n:'岩石区 The Rocks',e:'🏘️',ty:'attraction',la:-33.8586,lo:151.2098,d:'上午慢逛历史街区、看海港大桥；按孩子节奏随时休息'},
+     {n:'环形码头 Circular Quay',e:'⛴️',ty:'transport',la:-33.8611,lo:151.2134,d:'午餐后沿港湾步行至歌剧院；也是次日去塔龙加的渡轮出发点'},
+     {n:'悉尼歌剧院 Sydney Opera House',e:'🎭',ty:'kids',la:-33.8568,lo:151.2153,d:'建议订 ZOOOM 13:00 场（约 40 分钟）；演后可参加艺术家交流；注意现场可能有频闪'}
+   ]},
+   {t:'9/28 塔龙加动物园',spots:[
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'早餐后步行约 10 分钟至环形码头'},
+     {n:'环形码头 Circular Quay',e:'⛴️',ty:'transport',la:-33.8611,lo:151.2134,d:'乘公共渡轮前往 Taronga Zoo Wharf；以当天时刻表为准'},
+     {n:'塔龙加动物园 Taronga Zoo',e:'🦘',ty:'kids',la:-33.8434,lo:151.2413,d:'完整一天：优先澳洲动物、海豹/企鹅与儿童假期活动；Sky Safari 施工停运，改园内步行和接驳安排'},
+     {n:'环形码头 Circular Quay',e:'🌇',ty:'attraction',la:-33.8611,lo:151.2134,d:'傍晚渡轮返航看港湾日落，回酒店休息'}
+   ]},
+   {t:'9/29 达令港',spots:[
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'上午从酒店出发，打车约 10 分钟或步行结合轻轨前往达令港'},
+     {n:'SEA LIFE Sydney Aquarium',e:'🐠',ty:'kids',la:-33.8696,lo:151.2016,d:'上午主活动：儒艮、鲨鱼与企鹅展区；春假建议预订首场入馆'},
+     {n:'Darling Quarter 儿童游乐场',e:'🛝',ty:'kids',la:-33.8731,lo:151.2010,d:'午餐后放电；若天气热可缩短，留足回酒店休息时间'},
+     {n:'Barangaroo Reserve 巴兰加鲁保护区',e:'🌿',ty:'attraction',la:-33.8627,lo:151.2019,d:'体力允许再去：海港边轻松散步；不作为硬性打卡'}
+   ]},
    {t:'9/30 转场',spots:[
-     {n:'悉尼机场 SYD',e:'✈️',ty:'transport',la:-33.9399,lo:151.1753,d:'飞布里斯班（航班待订）'}
+     {n:'悉尼香格里拉酒店 Shangri-La Sydney',e:'🏨',ty:'hotel',la:-33.8591,lo:151.2088,d:'退房；悉尼→布里斯班航班待订，建议预留充足机场时间'},
+     {n:'悉尼机场 SYD',e:'✈️',ty:'transport',la:-33.9399,lo:151.1753,d:'飞往布里斯班；抵达后前往 W Brisbane 办理入住'}
    ]}
   ],
-  notes:['⚠️ 9/28–10/9 是 NSW 春假，景点人流和房价全年最高，住宿和门票要早订。','⚠️ Circular Quay 6 号码头曾于 7/20–8/28 施工，出发前一周再核实渡轮。','💡 塔龙加建议买 Zoo Express 套票（渡轮+门票）。']
+  notes:['✅ 悉尼三天按「一日一个核心体验 + 就近轻松活动」安排：海港艺术节 / 动物园 / 水族馆与游乐场。','⚠️ 9/28–10/9 是 NSW 春假；ZOOOM、SEA LIFE 和塔龙加门票建议先订。','⚠️ 塔龙加 Sky Safari 正在升级施工，预计 2027 年底重开；不按缆车安排动线。','🍽️ 点餐前核对：孔雀避核桃、桃子和山药；玥玥避开心果、腰果和山药。']
  },
  bne:{center:[-27.475,152.995],zoom:12,
   days:[
    {t:'总览',spots:[
-     {n:'布里斯班机场 BNE',e:'✈️',ty:'transport',la:-27.3842,lo:153.1175,d:'9/30 抵达 · 10/4 CX156 飞香港'},
+     {n:'布里斯班机场 BNE',e:'✈️',ty:'transport',la:-27.3842,lo:153.1175,d:'9/30 抵达 · 10/5 CX156 飞香港'},
+     {n:'W Brisbane 布里斯班 W 酒店',e:'🏨',ty:'hotel',la:-27.4678,lo:153.0181,d:'已定住宿 · 81 North Quay，CBD 河岸；到 South Bank 约 10 分钟车程'},
      {n:'南岸公园 South Bank',e:'🌴',ty:'attraction',la:-27.4785,lo:153.0230,d:'人工沙滩泳池、摩天轮、Brisbane 字母牌'},
      {n:'QAGOMA 昆士兰美术馆',e:'🎨',ty:'kids',la:-27.4712,lo:153.0170,d:'儿童创意中心免费，室内避晒'},
      {n:'Lone Pine 考拉保护区',e:'🐨',ty:'kids',la:-27.5333,lo:152.9690,d:'市区西南 12km；2024/7 起已取消抱考拉，只能贴身合影'},
@@ -104,8 +121,11 @@ const DATA={
      {n:'Holt Street Wharf 渡轮码头',e:'⛴️',ty:'transport',la:-27.4180,lo:153.1010,d:'Tangalooma 渡轮出发点'},
      {n:'Tangalooma 度假村',e:'🐬',ty:'attraction',la:-27.1800,lo:153.3700,d:'喂野生海豚、沙丘滑沙、沉船浮潜'}
    ]},
-   {t:'10/4 返程',spots:[
-     {n:'布里斯班机场 BNE',e:'✈️',ty:'transport',la:-27.3842,lo:153.1175,d:'CX156 飞香港 → CX390 回北京，当天不排活动'}
+   {t:'10/4 自由活动',spots:[
+     {n:'W Brisbane 布里斯班 W 酒店',e:'🏨',ty:'hotel',la:-27.4678,lo:153.0181,d:'不赶行程：酒店泳池/河岸散步，作为天气或体力的弹性日'}
+   ]},
+   {t:'10/5 返程',spots:[
+     {n:'布里斯班机场 BNE',e:'✈️',ty:'transport',la:-27.3842,lo:153.1175,d:'CX156 飞香港 → CX390 回北京；从 W Brisbane 出发，预留国际航班值机时间'}
    ]}
   ],
   notes:['⚠️ 9/19–10/4 是昆州春假高峰，Bluey\'s World 和 Lone Pine 都要提前订票，Bluey 最先订。','⚠️ 摩顿岛一去就是整天，目前只有转场日/回程日有空，大概率放弃；除非砍掉一项。','💡 抱考拉需去黄金海岸 Currumbin / Paradise Country，但已定不去黄金海岸。']
@@ -114,7 +134,7 @@ const DATA={
 
 let city='syd',day=0,map,layer;
 map=L.map('map').setView(DATA.syd.center,DATA.syd.zoom);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'&copy; OpenStreetMap, &copy; CARTO',maxZoom:19}).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
 layer=L.layerGroup().addTo(map);
 
 function selCity(c){city=c;day=0;
